@@ -1,0 +1,269 @@
+CSS Document
+*, *::after, *::before {
+  box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  background-position: center center;
+  height: 100vh;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVIGATION */
+
+/* The navigation menu */
+
+
+
+nav {
+  overflow: hidden;
+  background-color: white;
+  position: sticky;
+  /* border-style: solid;
+  border-color: red; */
+  top: 0;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation links */
+nav a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  /* border-style: solid;
+  border-color: red; */
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+  text-align: left;
+  /* border-style: solid;
+  border-color: green; */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  display: flex;
+  text-transform: none;
+  text-align: left;
+  border-top:solid rgb(206, 206, 206) 1px;
+}
+
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: white;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+  text-align: left;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+
+}
+
+/* searchbar */
+.navbar input[type=text] {
+  border: 1px solid #ccc; 
+}
+
+
+
+
+/* MAIN */
+
+main{
+  display: flex;
+  border: 10px solid goldenrod;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+
+}
+
+/* CONTAINER */
+
+section {
+  flex-basis: 50vh;
+  flex-shrink: 1;
+  padding: 0;
+  margin: 0;
+  color: black;
+  border-style: dashed;}
+
+article {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-color: indigo;
+}
+
+#hero {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: 28px;
+}
+
+span {
+  margin: 3em;
+  padding: 3em;
+  border-style: solid;
+  border-color: red;
+}
+
+button {
+  font-weight: 700;
+  display: flex;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  border: none;
+}
+
+/* SECTIONS */
+
+section:nth-of-type(1){
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+section:nth-of-type(2){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+section:nth-of-type(3){
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+section:nth-of-type(4){
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+/* ARTICLES */
+
+article:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 3em;
+  padding: 3em;
+}
+
+article:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 3em;
+  padding: 3em;
+}
+
+article:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 3em;
+  padding: 3em;
+}
+
+/* FOOTER */
+
+
+
+
+/* @MEDIA */
+@media (min-width: 992px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
