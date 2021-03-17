@@ -3,15 +3,17 @@ CSS Document
   box-sizing:border-box;  
   margin: 0;
   padding: 0;
+
 }
 
 body {
   background-color: white;
   background-position: center center;
   height: 100vh;
-  font-family: poppins;
-  font-weight: 600;
-  font-size: 11px;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: .875rem;
+  line-height: 1.3125rem;
   margin: 0;
   padding: 0;
 }
@@ -22,27 +24,18 @@ a {
 
 /* NAVIGATION */
 
-/* The navigation menu */
-
-
-
 nav {
   overflow: hidden;
   background-color: white;
   position: sticky;
-  /* border-style: solid;
-  border-color: red; */
-  top: 0;
-  position: sticky;
-  top: 0;
   display: flex;
   flex-direction: column;
+
 }
 
 /* Navigation links */
 nav a {
   float: left;
-  font-size: 16px;
   color: black;
   text-align: left;
   padding: 14px 16px;
@@ -64,24 +57,17 @@ nav a {
 
 /* Subnav button */
 .subnav .subnavbtn {
-  font-size: 16px;
   border: none;
   outline: none;
   color: black;
   padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
   display: flex;
   text-transform: none;
   text-align: left;
   border-top:solid rgb(206, 206, 206) 1px;
-}
-
-
-/* Add a red background color to navigation links on hover */
-.navbar a:hover, .subnav:hover .subnavbtn {
   background-color: white;
 }
+
 
 /* Style the subnav content - positioned absolute */
 .subnav-content {
@@ -104,7 +90,6 @@ nav a {
 
 /* Add a grey background color on hover */
 .subnav-content a:hover {
-  background-color: #eee;
   color: black;
 }
 
