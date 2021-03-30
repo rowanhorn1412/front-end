@@ -8,16 +8,19 @@
 body {
   background-color: white;
   height: 100vh;
-  font-family: sans-serif;
-  font-weight: 700;
-  font-size: .875rem;
-  line-height: 1.3125rem;
-  margin: 0;
-  padding: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  text-transform: none;
+  font-family: Helvetica Now,Helvetica,Arial,sans-serif;
+  margin-top: 4.5em;
 
 }
 
 /* HEADER */
+
+
 
 header{
   display: flex;
@@ -26,7 +29,80 @@ header{
 
 }
 
+#topnav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 4.5em;
+  padding: 0 .75rem;
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+}
+
+/* hamburger menu */
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 1em;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 2em;
+  height: 0.13em;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-4px, -4px);
+}
+
+
+#cart{
+  width: 2em;
+  height: 2em;
+  margin-right: 1em;
+  
+}
+
+/* input search */
+input[type=text] {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 44px;
+  min-height: 44px;
+  padding-left: 3.5rem;
+  color: #4e4c4b;
+  border: 1px solid #bbb;
+  background-image: url("../images/search.png");
+  line-height:3em;
+  background-color:white;
+  appearance:none;
+  background-repeat:no-repeat;
+  background-size:2em auto;
+  background-position:.75em center;
+}
+
+nav {
+  display: none;
+}
 /* MAIN */
 
 main{
@@ -37,11 +113,50 @@ main{
 }
 
 section{
+  background-image: none;
+}
+
+section:first-of-type {  
+  background-image: url("../images/section1.jpg");  
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
 }
 
+section:nth-of-type(2) {  
+  background-image: url("../images/section2.jpg");  
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 2em;
+  padding: 2em;
+}
+
 section:nth-of-type(3) {  
-  background-image: url(https://www.burton.com/dw/image/v2/AADF_PRD/on/demandware.static/-/Library-Sites-shared-content/default/dw498f4533/FW21/W21-Jake-Page/21W-JakePage-FullBleedHero-01-2x.jpg?sw=1600&sfrm=jpg&q=100);
+  background-image: url("../images/section3.jpg");  
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+section:nth-child(4) {  
+  background-image: none;  
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+section:last-of-type {  
+  background-image: url("../images/section5.jpg");  
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -50,26 +165,23 @@ section:nth-of-type(3) {
 }
 
 article{
-  text-align: center;
+  text-align: left;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  padding: 2em;
 }
 
+article:nth-child(1) {
+  padding: 2em;
+}
 
 
 /* FOOTER */
 
-footer{
+footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-
-
-}
-
-section:last-of-type {  
-  background-image: none;
 }
