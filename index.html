@@ -17,20 +17,19 @@
 
 	<header>
 
-		<div id="topnav">
-			<div class="hamburger" onclick="myFunction(this)">
+		<div class="topnav">
+			<div class="hamburger" onclick="openMenu(this)">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div>
 			</div>
+			
 			<a href="index.html" ><img src="images/burton_logo_klein.ico" id="logo" alt="logo"></a>
 			<a href="#" ><img src="images/shoppingcart.png" id="cart" alt="logo"></a>
-			
-		</div>
+			</div>
 		<input type="text" placeholder="Search..">	
 
-
-			<nav>
+		<nav class="showMenu">
 			<ul>
 				<li><a href="#">Snowboarding</a>
 					<ul>
@@ -102,127 +101,54 @@
 			</ul>
 		</nav>
 
-		
-		<!-- The navigation menu -->
-		<!-- <nav>
-			<a href="index.html"><img src="images/burton_logo_klein.ico" alt="logo"></a>
-			<input type="text" placeholder="Search..">
-			<div class="subnav">
-			  <button class="subnavbtn">Snowboarding</button>
-
-			  <div class="subnav-content">
-				<button class="subnavbtn">Snowboards</button>
-				<a href="#">Snowboard Boots</a>
-				<a href="#">Snowboard Bindings</a>
-				<a href="#">Protection</a>
-				<a href="#">Snowboarding Tools</a>
-			  </div>
-			</div>
-			<div class="subnav">
-			  <button class="subnavbtn">Women </button>
-			  <div class="subnav-content">
-				<a href="#">Snowboarding</a>
-				<a href="#">Jackets & Outerwear</a>
-				<a href="#">Clothing</a>
-				<a href="#">Accessories</a>
-				<a href="#">Collections</a>
-			  </div>
-			</div>
-			<div class="subnav">
-				<button class="subnavbtn">Men</button>
-				<div class="subnav-content">
-					<a href="#">Snowboarding</a>
-					<a href="#">Jackets & Outerwear</a>
-					<a href="#">Clothing</a>
-					<a href="#">Accessories</a>
-					<a href="#">Collections</a>
-				</div>
-			  </div>
-			  <div class="subnav">
-				<button class="subnavbtn">Kids</button>
-				<div class="subnav-content">
-					<a href="#">Snowboarding</a>
-					<a href="#">Jackets & Outerwear</a>
-					<a href="#">Clothing</a>
-					<a href="#">Accessories</a>
-					<a href="#">Collections</a>
-				</div>
-			  </div>
-			  <div class="subnav">
-				<button class="subnavbtn">Accessories & Bags</button>
-				<div class="subnav-content">
-				  <a href="#">Bags</a>
-				  <a href="#">Luggage</a>
-				  <a href="#">Accessories</a>
-				  <a href="#">Protection</a>
-				  <a href="#">Collections</a>
-				</div>
-			  </div>
-			  <div class="subnav">
-				<button class="subnavbtn">Sale</button>
-				<div class="subnav-content">
-				  <a href="#">New in Sale</a>
-				  <a href="#">Men's Sale</a>
-				  <a href="#">Women's Sale</a>
-				  <a href="#">Kids' Sale</a>
-				  <a href="#">Bags and Luggage Sale</a>
-				</div>
-			  </div>
-			<a href="#home">MINE77</a>
-		</nav>
-	</header> -->
-
 
 	<!-- MAIN -->
 	<main>
 		<!-- first section -->
-		<section>
-			<article>
-				<p>
+		<section class="firstSection">
+			<article class="firstArticle">
+				<h3>
 					Extra 20% off Winter Items & More
-				</p>
-				<p>
+				</h3>
+				<h1>
 					Flash Sale – March 26-27
-				</p>
+				</h1>
 				<p>
 					For two days ONLY enjoy the best deals of the season with an extra 20% off winter kit, 
 					including sale items.  
-					Use sale code WINTER20 at the checkout. 				
+					Use sale code <b>WINTER20</b> at the checkout. 				
 				</p>
 				<button>Shop now</button>
 			</article>	
 		</section>
 
 		<!-- Second section -->
-		<section>
-			<article>
+		<section class="secondSection">
+			<article class="secondArticle">
+				<h3>
+					Unlock the Freedom of Splitboarding
+				</h3>
+				<h1>
+					This Winter's Alternative Approach
+				</h1>
 				<p>
-					Extra 20% off Winter Items & More
+					If you can ride, you can split. Get the most out of this winter
+					by unlocking the freedom of splitboarding.
 				</p>
-				<p>
-					Flash Sale – March 26-27
-				</p>
-				<p>
-					For two days ONLY enjoy the best deals of the season with an extra 20% off winter kit, 
-					including sale items.  
-					Use sale code WINTER20 at the checkout. 				
-				</p>
-				<button>Shop now</button>
+				<button>Shop split gear</button>
 			</article>
 		</section>
 
 		<!-- Third section -->
-		<section>
-			<article>
+		<section class="thirdSection">
+			<article class="thirdArticle">
+				<h1>
+					Thanks Jake
+				</h1>
 				<p>
-				hier komt tekst
+					Jake founded Burton Snowboards out of a Vermont barn in 1977 and dedicated the rest of his life to snowboarding.
 				</p>
-				<p>
-				hier komt ook tekst
-				</p>
-				<button>
-				klik hier
-				</button>
+				<a class="underlineLink" href="#">Take a moment</a>
 			</article>	
 		</section>
 
@@ -232,20 +158,21 @@
 	<!-- Footer -->
 	<footer>
 		<!-- first Footer section -->
-		<section>
+		<section class="fourthSection">
 			<form action="#">
 				<label>Sign up for news, sales or catalog</label>
 				<input type="email" placeholder="Enter your email address">
 			</form>
-			<a href="#">FIND A STORE</a>
-			<a href="#">TAKE A TEST RIDE</a>
+			<div class="footerLink">
+			<a class="underlineLink" href="#">FIND A STORE</a>
+			<a class="underlineLink" href="#">TAKE A TEST RIDE</a>
+			</div>
 		</section>
 
 		<!-- second Footer section -->
-		<section>
-			<ul>
-				<li><a href="#">About Us</a>
-					<ul>
+		<section class="fifthSection">
+				<h3><a href="#">About Us</h3>
+					<ul class="footerBox">
 						<li><a href="#">Burton</li></a>
 						<li><a href="#">Remembering Jake</li></a>
 						<li><a href="#">Careers</li></a>
@@ -254,10 +181,10 @@
 						<li><a href="#">Affiliate</li></a>
 						<li><a href="#">Performer Program</li></a>
 					</ul>
-				</li>
 				
-				<li><a href="#">Discover</a>
-					<ul>
+				
+				<h3><a href="#">Discover</h3>
+					<ul class="footerBox">
 						<li><a href="#">Snowboards</a></li>
 						<li><a href="#">snowboard Boots</a></li>
 						<li><a href="#">Snowboard Bindings</a></li>
@@ -265,10 +192,10 @@
 						<li><a href="#">Snowboarding Tools</a></li>
 						<li><a href="#">Discover</a></li>
 					</ul>
-				</li>
 				
-				<li><a href="#">Self Service</a>
-					<ul>
+				
+				<h3><a href="#">Self Service</h3>
+					<ul class="footerBox">
 						<li><a href="#">Snowboards</a></li>
 						<li><a href="#">snowboard Boots</a></li>
 						<li><a href="#">Snowboard Bindings</a></li>
@@ -276,10 +203,10 @@
 						<li><a href="#">Snowboarding Tools</a></li>
 						<li><a href="#">Discover</a></li>
 					</ul>
-				</li>
+				
 			   
-				<li><a href="#">Get Help</a>
-					<ul>
+				<h3><a href="#">Get Help</h3>
+					<ul class="footerBox">
 						<li><a href="#">Snowboards</a></li>
 						<li><a href="#">snowboard Boots</a></li>
 						<li><a href="#">Snowboard Bindings</a></li>
@@ -287,8 +214,6 @@
 						<li><a href="#">Snowboarding Tools</a></li>
 						<li><a href="#">Discover</a></li>
 					</ul>
-				</li>
-			</ul>   
 		</section>
 		
 
