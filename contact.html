@@ -106,63 +106,47 @@
 	<!-- MAIN -->
 	<main>
 
-		<!-- Sale Banner -->
-		<div class="saleBanner">
-			<p>New Styles added - up to 40% Off Winter Sale!</p>
-			<a href="#sale">Shop Here</a>
-		  </div>
+    <!-- Sale Banner -->
+    <div class="saleBanner">
+      <p>New Styles added - up to 40% Off Winter Sale!</p>
+      <a href="#sale">Shop Here</a>
+    </div>
 
+    <!-- h2 for contact form -->
+      <h2 class="contactHeader">Get in Touch</h1>
 
-		<!-- first section -->
-		<section class="firstSection">
-			<article class="firstArticle">
-				<h3>
-					Extra 20% off Winter Items & More
-				</h3>
-				<h1>
-					Flash Sale – March 26-27
-				</h1>
-				<p>
-					For two days ONLY enjoy the best deals of the season with an extra 20% off winter kit, 
-					including sale items.  
-					Use sale code <b>WINTER20</b> at the checkout. 				
-				</p>
-				<button>Shop now</button>
-			</article>	
-		</section>
+    <section class="contactSection">
+      <form action="question" method="POST">
 
-		<!-- Second section -->
-		<section class="secondSection">
-			<article class="secondArticle">
-				<h3>
-					Unlock the Freedom of Splitboarding
-				</h3>
-				<h1>
-					This Winter's Alternative Approach
-				</h1>
-				<p>
-					If you can ride, you can split. Get the most out of this winter
-					by unlocking the freedom of splitboarding.
-				</p>
-				<button>Shop split gear</button>
-			</article>
-		</section>
+        <legend>Email Burton</legend>
+        <select>
+          <option value="shipping">Where's my order (shipping/tracking)</option>
+          <option value="website">Help with checkout (or other website issues)</option>
+          <option value="return">Question about a return or exchange</option>
+          <option value="spare">Request spare part(s)</option>
+          <option value="product">Help selecting the right product</option>
+          <option value="else">Something else</option>
+        </select>
 
-		<!-- Third section -->
-		<section class="thirdSection">
-			<article class="thirdArticle">
-				<h1>
-					Thanks Jake
-				</h1>
-				<p>
-					Jake founded Burton Snowboards out of a Vermont barn in 1977 and dedicated the rest of his life to snowboarding.
-				</p>
-				<a class="underlineLink" href="#">Take a moment</a>
-			</article>	
-		</section>
+        <legend>Contact Information</legend>
+        <label for="Fname">First name</label>
+        <input type="text" placeholder="First name" name="Fname" required>
 
+        <label for="Lname">Last name</label>
+        <input type="text" placeholder="Last name" name="Lname" required>
 
-	</main>
+        <label for="email">Email</label>
+        <input type="email" required name="email " minlength="6 " maxlength="60 " placeholder="test@hotmail.com ">
+        
+        <label for='question'>Question</label>
+        <textarea name="comment" form="question" placeholder="Question"></textarea>
+        <button type="submit">Email Burton</button>
+
+      </form>
+      
+    </section>
+
+  </main>
 
 	<!-- Footer -->
 	<footer>
@@ -262,3 +246,263 @@
 	
 </html>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+CSS Document
+*, *::after, *::before {
+  box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  background-color: white;
+  background-position: center center;
+  height: 100vh;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: .875rem;
+  line-height: 1.3125rem;
+  margin: 0;
+  padding: 0;
+  /* background-image: url(https://www.burton.com/dw/image/v2/AADF_PRD/on/demandware.static/-/Library-Sites-shared-content/default/dw2e298365/S22/SS-A-Day-For-Jake/SS21-ADFJ-LargePromo-Sustain-BG.png); */
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* NAVIGATION */
+
+nav {
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Navigation links */
+nav a {
+  float: left;
+  color: black;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  /* border-style: solid;
+  border-color: red; */
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+  text-align: left;
+  /* border-style: solid;
+  border-color: green; */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  display: flex;
+  text-transform: none;
+  text-align: left;
+  border-top:solid rgb(206, 206, 206) 1px;
+  background-color: white;
+}
+
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1;
+  text-align: left;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+
+}
+
+/* searchbar */
+.navbar input[type=text] {
+  border: 1px solid #ccc; 
+}
+
+
+
+
+/* MAIN */
+
+main{
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+
+}
+
+/* CONTAINER */
+
+section {
+  flex-basis: 50vh;
+  flex-shrink: 1;
+  padding: 0;
+  margin: 0;
+}
+
+article {
+  /* position: absolute; */
+  display: flex;
+  flex-direction: row;
+}
+
+#hero {
+  overflow: hidden;   
+  width: 100%;
+  height: auto;
+}
+
+p {
+  font-size: 28px;
+}
+
+button {
+  font-weight: 700;
+  display: flex;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  border: none;
+}
+
+/* SECTIONS */
+
+section:nth-of-type(1){
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+section:nth-of-type(2){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-of-type(3){
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+section:nth-of-type(4){
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+/* ARTICLES */
+
+article:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+article:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+
+article:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+
+/* FOOTER */
+input[type=text] {
+  background-image: url('https://www.sinds1971.nl/ferd/images/icon-search.svg');
+  background-position: 9px 10px;
+  background-repeat: no-repeat;
+  padding-left: 50px;  
+}
+
+
+/* @MEDIA */
+@media (min-width: 992px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+} -->
