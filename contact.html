@@ -17,91 +17,39 @@
 <body>
 
 	<header>
-
-		<div class="topnav">
-			<div class="hamburger" onclick="openMenu(this)">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
-			
-			<a href="index.html" ><img src="images/burton_logo_klein.ico" id="logo" alt="logo"></a>
-			<a href="#" ><img src="images/shoppingcart.png" id="cart" alt="logo"></a>
-			</div>
-		<input type="text" placeholder="Search..">	
-
-		<nav class="showMenu">
-			<ul>
-				<li><a href="#">Snowboarding</a>
-					<ul>
-						<li><a href="#">Snowboards</a></li>
-						<li><a href="#">snowboard Boots</a></li>
-						<li><a href="#">Snowboard Bindings</a></li>
-						<li><a href="#">Protection</a></li>
-						<li><a href="#">Snowboarding Tools</a></li>
-						<li><a href="#">Discover</a></li>
-					</ul>
-				</li>
-				
-				<li><a href="#">Women</a>
-					<ul>
-						<li><a href="#">Snowboards</a></li>
-						<li><a href="#">snowboard Boots</a></li>
-						<li><a href="#">Snowboard Bindings</a></li>
-						<li><a href="#">Protection</a></li>
-						<li><a href="#">Snowboarding Tools</a></li>
-						<li><a href="#">Discover</a></li>
-					</ul>
-				</li>
-			   
-				<li><a href="#">Men</a>
-					<ul>
-						<li><a href="#">Snowboards</a></li>
-						<li><a href="#">snowboard Boots</a></li>
-						<li><a href="#">Snowboard Bindings</a></li>
-						<li><a href="#">Protection</a></li>
-						<li><a href="#">Snowboarding Tools</a></li>
-						<li><a href="#">Discover</a></li>
-					</ul>
-				</li>
-			   
-				<li><a href="#">Kids</a>
-					<ul>
-						<li><a href="#">Snowboards</a></li>
-						<li><a href="#">snowboard Boots</a></li>
-						<li><a href="#">Snowboard Bindings</a></li>
-						<li><a href="#">Protection</a></li>
-						<li><a href="#">Snowboarding Tools</a></li>
-						<li><a href="#">Discover</a></li>
-					</ul>
-				</li>
-			   
-				<li><a href="#">Accessoires & Bags</a>
-					<ul>
-						<li><a href="#">Snowboards</a></li>
-						<li><a href="#">snowboard Boots</a></li>
-						<li><a href="#">Snowboard Bindings</a></li>
-						<li><a href="#">Protection</a></li>
-						<li><a href="#">Snowboarding Tools</a></li>
-						<li><a href="#">Discover</a></li>
-					</ul>
-				</li>
-			   
-				<li><a href="#">Sale</a>
-					<ul>
-						<li><a href="#">Snowboards</a></li>
-						<li><a href="#">snowboard Boots</a></li>
-						<li><a href="#">Snowboard Bindings</a></li>
-						<li><a href="#">Protection</a></li>
-						<li><a href="#">Snowboarding Tools</a></li>
-						<li><a href="#">Discover</a></li>
-					</ul>
-				</li>
-			   
-				<li><a href="#">MINE77</a></li>
-			</ul>
-		</nav>
-
+    <nav class="navbar">
+      <a href="index.html" ><img src="images/burton_logo_klein.ico" id="logo" alt="logo"></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Snowboarding</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Women</a>
+          </li>
+          <li class="nav-item">
+             <a href="#" class="nav-link">Men</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Kids</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Accessoires & Bags</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Sale</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">MINE77</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <input type="text" placeholder="Search..">
+</header>
 
 	<!-- MAIN -->
 	<main>
@@ -143,14 +91,12 @@
         <button type="submit">Email Burton</button>
 
       </form>
-      
     </section>
-
   </main>
 
 	<!-- Footer -->
 	<footer>
-		<!-- first Footer section -->
+		<!-- Email sign up footer section -->
 		<section class="contactFooter">
 			<form action="#">
 				<label>Sign up for news, sales or catalog</label>
@@ -161,8 +107,8 @@
 
 		</section>
 
-		<!-- second Footer section -->
-		<section class="fifthSection">
+		<!-- footer nav section -->
+		<section class="footerNavSection">
 			<ul class="footerBox">
 				<h4 class="footerNav">About Us</h4>
 				<li><a href="#">About Burton</li></a>
@@ -207,7 +153,9 @@
 			</div>	
 		</section>
 
+		<!-- bottom-row footer section -->
 		<section class="bottomRow">
+			<!-- socialmedia section -->
 			<div class="smBox">
 				<a href="#" class="fa fa-facebook"></a>
 				<a href="#" class="fa fa-twitter"></a>
@@ -215,6 +163,7 @@
 				<a href="#" class="fa fa-instagram"></a>
 				<a href="#" class="fa fa-pinterest"></a>	
 			</div>
+
 
 			<div class="languageBox">
 				<img src="images/dutchFlag.png" id="dutchFlag" alt="Dutch Flag">
@@ -233,276 +182,9 @@
 				<li>Site Map</li>
 			</ul>
 		</section>
-
-
-		
-
 		<script src="scripts/script.js"></script>
 	</footer>
 
-
-	
 </body>
 	
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 
-CSS Document
-*, *::after, *::before {
-  box-sizing:border-box;  
-  margin: 0;
-  padding: 0;
-
-}
-
-body {
-  background-color: white;
-  background-position: center center;
-  height: 100vh;
-  font-family: sans-serif;
-  font-weight: 700;
-  font-size: .875rem;
-  line-height: 1.3125rem;
-  margin: 0;
-  padding: 0;
-  /* background-image: url(https://www.burton.com/dw/image/v2/AADF_PRD/on/demandware.static/-/Library-Sites-shared-content/default/dw2e298365/S22/SS-A-Day-For-Jake/SS21-ADFJ-LargePromo-Sustain-BG.png); */
-  background-repeat: no-repeat;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* NAVIGATION */
-
-nav {
-  overflow: hidden;
-  background-color: white;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-
-}
-
-/* Navigation links */
-nav a {
-  float: left;
-  color: black;
-  text-align: left;
-  padding: 14px 16px;
-  text-decoration: none;
-  /* border-style: solid;
-  border-color: red; */
-}
-
-/* The subnavigation menu */
-.subnav {
-  float: left;
-  overflow: hidden;
-  text-align: left;
-  /* border-style: solid;
-  border-color: green; */
-  display: flex;
-  flex-direction: column;
-}
-
-/* Subnav button */
-.subnav .subnavbtn {
-  border: none;
-  outline: none;
-  color: black;
-  padding: 14px 16px;
-  display: flex;
-  text-transform: none;
-  text-align: left;
-  border-top:solid rgb(206, 206, 206) 1px;
-  background-color: white;
-}
-
-
-/* Style the subnav content - positioned absolute */
-.subnav-content {
-  display: none;
-  position: absolute;
-  left: 0;
-  background-color: white;
-  width: 100%;
-  z-index: 1;
-  text-align: left;
-}
-
-/* Style the subnav links */
-.subnav-content a {
-  float: left;
-  color: black;
-  text-decoration: none;
-  text-align: left;
-}
-
-/* Add a grey background color on hover */
-.subnav-content a:hover {
-  color: black;
-}
-
-/* When you move the mouse over the subnav container, open the subnav content */
-.subnav:hover .subnav-content {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-
-
-}
-
-/* searchbar */
-.navbar input[type=text] {
-  border: 1px solid #ccc; 
-}
-
-
-
-
-/* MAIN */
-
-main{
-  display: flex;
-  min-height: 100vh;
-  flex-wrap: wrap;
-  flex-direction: column;
-  overflow: hidden;
-  position: relative;
-
-}
-
-/* CONTAINER */
-
-section {
-  flex-basis: 50vh;
-  flex-shrink: 1;
-  padding: 0;
-  margin: 0;
-}
-
-article {
-  /* position: absolute; */
-  display: flex;
-  flex-direction: row;
-}
-
-#hero {
-  overflow: hidden;   
-  width: 100%;
-  height: auto;
-}
-
-p {
-  font-size: 28px;
-}
-
-button {
-  font-weight: 700;
-  display: flex;
-  padding: 1rem 2rem;
-  text-transform: uppercase;
-  text-align: center;
-  align-items: center;
-  border: none;
-}
-
-/* SECTIONS */
-
-section:nth-of-type(1){
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-section:nth-of-type(2){
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-section:nth-of-type(3){
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-section:nth-of-type(4){
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-
-/* ARTICLES */
-
-article:nth-of-type(1) {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-
-}
-
-article:nth-of-type(2) {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-
-}
-
-article:nth-of-type(3) {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-
-}
-
-/* FOOTER */
-input[type=text] {
-  background-image: url('https://www.sinds1971.nl/ferd/images/icon-search.svg');
-  background-position: 9px 10px;
-  background-repeat: no-repeat;
-  padding-left: 50px;  
-}
-
-
-/* @MEDIA */
-@media (min-width: 992px) {
-  .header li {
-    float: left;
-  }
-  .header li a {
-    padding: 20px 30px;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
-} -->

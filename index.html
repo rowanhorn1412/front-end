@@ -17,92 +17,43 @@
 <body>
 
 	<header>
-
-		<div class="topnav">
-			<div class="hamburger" onclick="openMenu(this)">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
-			
-			<a href="index.html" ><img src="images/burton_logo_klein.ico" id="logo" alt="logo"></a>
-			<a href="#" ><img src="images/shoppingcart.png" id="cart" alt="logo"></a>
-			</div>
-		<input type="text" placeholder="Search..">	
-
-		<nav class="showMenu">
-			<ul>
-				<li><a href="#">Snowboarding</a>
-					<ul>
-						<li><a href="#">Snowboards</a></li>
-						<li><a href="#">snowboard Boots</a></li>
-						<li><a href="#">Snowboard Bindings</a></li>
-						<li><a href="#">Protection</a></li>
-						<li><a href="#">Snowboarding Tools</a></li>
-						<li><a href="#">Discover</a></li>
-					</ul>
-				</li>
-				
-				<li><a href="#">Women</a>
-					<ul>
-						<li><a href="#">Snowboards</a></li>
-						<li><a href="#">snowboard Boots</a></li>
-						<li><a href="#">Snowboard Bindings</a></li>
-						<li><a href="#">Protection</a></li>
-						<li><a href="#">Snowboarding Tools</a></li>
-						<li><a href="#">Discover</a></li>
-					</ul>
-				</li>
-			   
-				<li><a href="#">Men</a>
-					<ul>
-						<li><a href="#">Snowboards</a></li>
-						<li><a href="#">snowboard Boots</a></li>
-						<li><a href="#">Snowboard Bindings</a></li>
-						<li><a href="#">Protection</a></li>
-						<li><a href="#">Snowboarding Tools</a></li>
-						<li><a href="#">Discover</a></li>
-					</ul>
-				</li>
-			   
-				<li><a href="#">Kids</a>
-					<ul>
-						<li><a href="#">Snowboards</a></li>
-						<li><a href="#">snowboard Boots</a></li>
-						<li><a href="#">Snowboard Bindings</a></li>
-						<li><a href="#">Protection</a></li>
-						<li><a href="#">Snowboarding Tools</a></li>
-						<li><a href="#">Discover</a></li>
-					</ul>
-				</li>
-			   
-				<li><a href="#">Accessoires & Bags</a>
-					<ul>
-						<li><a href="#">Snowboards</a></li>
-						<li><a href="#">snowboard Boots</a></li>
-						<li><a href="#">Snowboard Bindings</a></li>
-						<li><a href="#">Protection</a></li>
-						<li><a href="#">Snowboarding Tools</a></li>
-						<li><a href="#">Discover</a></li>
-					</ul>
-				</li>
-			   
-				<li><a href="#">Sale</a>
-					<ul>
-						<li><a href="#">Snowboards</a></li>
-						<li><a href="#">snowboard Boots</a></li>
-						<li><a href="#">Snowboard Bindings</a></li>
-						<li><a href="#">Protection</a></li>
-						<li><a href="#">Snowboarding Tools</a></li>
-						<li><a href="#">Discover</a></li>
-					</ul>
-				</li>
-			   
-				<li><a href="#">MINE77</a></li>
+		<nav class="navbar">
+		  <a href="index.html" ><img src="images/burton_logo_klein.ico" id="logo" alt="logo"></a>
+			<ul class="nav-menu">
+			  <li class="nav-item">
+				<a href="#" class="nav-link">Snowboarding</a>
+			  </li>
+			  <li class="nav-item">
+				<a href="#" class="nav-link">Women</a>
+			  </li>
+			  <li class="nav-item">
+				 <a href="#" class="nav-link">Men</a>
+			  </li>
+			  <li class="nav-item">
+				<a href="#" class="nav-link">Kids</a>
+			  </li>
+			  <li class="nav-item">
+				<a href="#" class="nav-link">Accessoires & Bags</a>
+			  </li>
+			  <li class="nav-item">
+				<a href="#" class="nav-link">Sale</a>
+			  </li>
+			  <li class="nav-item">
+				<a href="#" class="nav-link">MINE77</a>
+			  </li>
 			</ul>
+			<!-- hamburger -->
+			<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
 		</nav>
-
-
+		<!-- searchbar -->
+		<input type="text" placeholder="Search..">
+	</header>
+	
+	
 	<!-- MAIN -->
 	<main>
 
@@ -114,8 +65,8 @@
 
 
 		<!-- first section -->
-		<section class="firstSection">
-			<article class="firstArticle">
+		<section class="winterSale">
+			<article class="winterSaleArticle">
 				<h3>
 					Extra 20% off Winter Items & More
 				</h3>
@@ -132,8 +83,8 @@
 		</section>
 
 		<!-- Second section -->
-		<section class="secondSection">
-			<article class="secondArticle">
+		<section class="splitboardSection">
+			<article class="splitboardArticle">
 				<h3>
 					Unlock the Freedom of Splitboarding
 				</h3>
@@ -161,12 +112,11 @@
 			</article>	
 		</section>
 
-
 	</main>
 
 	<!-- Footer -->
 	<footer>
-		<!-- first Footer section -->
+		<!-- Email sign up footer section -->
 		<section class="contactFooter">
 			<form action="#">
 				<label>Sign up for news, sales or catalog</label>
@@ -177,8 +127,8 @@
 
 		</section>
 
-		<!-- second Footer section -->
-		<section class="fifthSection">
+		<!-- footer nav section -->
+		<section class="footerNavSection">
 			<ul class="footerBox">
 				<h4 class="footerNav">About Us</h4>
 				<li><a href="#">About Burton</li></a>
@@ -223,7 +173,9 @@
 			</div>	
 		</section>
 
+		<!-- bottom-row footer section -->
 		<section class="bottomRow">
+			<!-- socialmedia section -->
 			<div class="smBox">
 				<a href="#" class="fa fa-facebook"></a>
 				<a href="#" class="fa fa-twitter"></a>
@@ -231,6 +183,7 @@
 				<a href="#" class="fa fa-instagram"></a>
 				<a href="#" class="fa fa-pinterest"></a>	
 			</div>
+
 
 			<div class="languageBox">
 				<img src="images/dutchFlag.png" id="dutchFlag" alt="Dutch Flag">
@@ -249,16 +202,9 @@
 				<li>Site Map</li>
 			</ul>
 		</section>
-
-
-		
-
 		<script src="scripts/script.js"></script>
 	</footer>
 
-
-	
 </body>
 	
 </html>
-
