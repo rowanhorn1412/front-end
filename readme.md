@@ -1,8 +1,22 @@
 # Procesverslag
 **Auteur:** Rowan Horn
 
-Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
+## Week 1 Breakdownschets
+-uitwerken voor de 1e werkgroep - eind van de eerste week-
 
+## Week 1 Intake
+-uitwerken voor de kick-off werkgroep - begin van de eerste week-
+
+**Je startniveau:** 
+Blauwe piste🏂
+
+**Je focus:** 
+Responsive (wellicht beide)
+
+**Je opdracht:** 
+https://www.burton.com/nl/en/home
+
+https://github.com/rowanhorn1412/front-end.git
 
 
 ## Bronnenlijst
@@ -19,7 +33,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 11. https://fontawesome.com/icons?d=gallery&p=2
 12. https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
 
+## Bronnen
 
+- [Nu.nl](https://www.nu.nl/)
+- [Box-shadow tool (cssmatic.com)](https://www.cssmatic.com/box-shadow)
+- [MDN Web Docs / Mozilla Developer Network](https://developer.mozilla.org/)
+- [MDN - Using CSS counters](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters)
+- [Flexbox spiekbriefje (css-tricks)](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [MDN - matchMedia](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia)
 
 ## Eindgesprek (week 7/8)
 
@@ -31,19 +52,16 @@ lastig:
 nav bar en footer responsive maken
 
 **Screenshot(s):**
-
 -screenshot(s) van je eindresultaat-
 
 
 
 ## Voortgang 3 (week 6)
-
 -same as voortgang 1-
 
 
 
 ## Voortgang 2 (week 5)
-
 -same as voortgang 1-
 
 
@@ -51,32 +69,22 @@ nav bar en footer responsive maken
 ## Voortgang 1 (week 3)
 
 ### Stand van zaken
-
 -dit ging goed & dit was lastig-
 
-**Screenshot(s):**
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+<details>
+<summary> Breakdownschets van Burton.com  </summary>
 
-### Agenda voor meeting
+<kbd>
+<img src="images/breakdown1.png" width="375px" alt="Burton snowboard page"> 
+</kbd>
 
--samen met je groepje opstellen-
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-### Verslag van meeting
-
--na afloop snel uitkomsten vastleggen-
-
-
+</details>
 
 ## Breakdownschets (week 1)
--uitwerken voor de 1e werkgroep - eind van de eerste week-
-
+<img src="images/breakdown1.jpeg"  alt="breakdown 1">
+<img src="images/breakdown2.jpeg"  alt="breakdown 2">
+<img src="images/breakdown3.jpeg"  alt="breakdown 3">
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
@@ -92,8 +100,8 @@ https://github.com/rowanhorn1412/front-end.git
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/page1.png" width="375px" alt="Burton home page">
+<img src="images/screenshot1.png" width="375px" alt="Burton home page">
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/page2.png" width="375px" alt="Burton snowboard page">
+<img src="images/screenshot2.png" width="375px" alt="Burton snowboard page">
